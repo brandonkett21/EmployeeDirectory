@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './App.css'
 
 const Table = ({ users }) => {
   const [sortedUsers, updateSortedUsers] = useState([]);
@@ -10,7 +11,7 @@ const Table = ({ users }) => {
       <table className="table">
         <thead>
           <tr>
-            <th scope="col">title</th>
+            <th scope="col">Title</th>
             <th
               scope="col"
               onClick={() => {
@@ -35,10 +36,10 @@ const Table = ({ users }) => {
               First
             </th>
             <th scope="col">Last</th>          
-            <th scope="col">email</th>
-            <th scope="col">phone</th>         
-            <th scope="col">state</th>
-            <th scope="col">country</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>         
+            <th scope="col">State</th>
+            <th scope="col">Country</th>
        
        
           </tr>
